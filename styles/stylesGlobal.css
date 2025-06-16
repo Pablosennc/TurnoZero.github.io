@@ -18,6 +18,21 @@
     --font-body: 'Poppins', sans-serif;
 }
 
+.inicio-img {
+  width: 100%;
+  max-width: 300px;      /* Ajusta el máximo tamaño según tu diseño */
+  aspect-ratio: 1/1;     /* Mantiene la imagen cuadrada. Cambia a 16/9 si lo prefieres rectangular */
+  object-fit: cover;     /* Recorta la imagen para llenar el contenedor sin deformarla */
+  display: block;        /* Elimina espacio extra abajo de la imagen */
+  margin: 0 auto;        /* Centra la imagen horizontalmente */
+}
+@media (max-width: 600px) {
+  .inicio-img {
+    max-width: 90vw;     /* En pantallas pequeñas, que no sobrepase el ancho de la ventana */
+  }
+}
+
+
 body {
     margin: 0;
     padding: 0;
