@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votaciones - TurnoZero</title>    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../styles/stylesGlobal.css">
+    <link rel="stylesheet" href="../styles/stylesVotacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Votaciones - TurnoZero</h1>
+        <img src="../media/logo.jpg" alt="Logo de TurnoZero" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="votacion.html" class="active">Votaciones</a></li>
+                <li><a href="cuenta.html">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Votaciones</h2>
+        
+        <div class="votacion-info card">
+            <i class="fas fa-vote-yea"></i>
+            <h3>Votación de torneos de Julio</h3>
+            <p>¡Bienvenido a la votación de torneos de julio! Aquí puedes elegir los torneos que te gustaría ver en nuestro próximo calendario. Tu opinión es muy importante para nosotros.</p>
+
+            <form action="submit_vote.php" method="post">
+                
+                    <label class="custom-checkbox" for="tournament1">
+                        
+                        <input type="checkbox" id="tournament1" name="tournaments[]" value="Torneo Pokémon">
+                        <span>Torneo Pokémon</span>
+                    </label>
+                    
+                    <label class="custom-checkbox" for="tournament2">
+                        <input type="checkbox" id="tournament2" name="tournaments[]" value="Torneo Yu-Gi-Oh!">
+                        <span>Torneo Yu-Gi-Oh!</span>
+                    </label>
+                    
+                    <label class="custom-checkbox" for="tournament3">
+                        <input type="checkbox" id="tournament3" name="tournaments[]" value="Torneo Magic">
+                        <span>Torneo Magic</span>
+                    </label>
+                    
+                    <label class="custom-checkbox" for="tournament4">
+                        <input type="checkbox" id="tournament4" name="tournaments[]" value="Torneo Star-Wars">
+                        <span>Torneo Star-Wars</span>
+                    </label>
+                    
+                    <label class="custom-checkbox" for="tournament5">
+                        <input type="checkbox" id="tournament5" name="tournaments[]" value="Torneo Mitos y Leyendas">
+                        <span>Torneo Mitos y Leyendas</span>
+                    </label>
+                
+                
+                <button type="submit" class="btn">
+                    Votar
+                <i class="fas fa-paper-plane"></i>
+
+                </button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Propuestas de torneos</h3>
+            <p>Si tienes alguna propuesta de torneo que te gustaría ver, por favor escríbela aquí:</p>
+            <form action="submit_proposal.php" method="post">
+                <textarea name="propuesta" rows="4" placeholder="Escribe tu propuesta aquí..."></textarea><br>
+                
+                <button type="submit" class="btn">
+
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar Propuesta</button>
+                
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TurnoZero. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:contacto@turnozero.com">contacto@turnozero.com</a></p>
+    </footer>
+</body>
+</html>

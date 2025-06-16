@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - TurnoZero</title>    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../styles/stylesGlobal.css">
+    <link rel="stylesheet" href="../styles/stylesCuenta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Cuenta - TurnoZero</h1>
+        <img src="../media/logo.jpg" alt="Logo de TurnoZero" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="votacion.html">Votaciones</a></li>
+                <li><a href="cuenta.html" class="active">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="perfil-container card">
+            <div class="perfil-info">
+                <img src="../media/profile.png" alt="Foto de perfil" class="avatar">
+                <h2>@JuanK</h2>
+                <p>Miembro desde: Enero 2024</p>                <button class="btn btn-accent">Editar Perfil</button>
+            </div>
+        </section>
+
+        <section class="stats-container">
+            <h3>Estadísticas</h3>
+            <div class="stats-grid grid">
+                <div class="stat-card card">
+                    <h4>Torneos Jugados</h4>
+                    <p>15</p>
+                </div>
+                <div class="stat-card card">
+                    <h4>Victorias</h4>
+                    <p>8</p>
+                </div>
+                <div class="stat-card card">
+                    <h4>Top 8</h4>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historial-container">
+            <h3>Historial de Torneos</h3>
+            <div class="torneo-list grid">
+                <div class="torneo-card card">
+                    <h4>Torneo Regional Yu-Gi-Oh!</h4>
+                    <p>Fecha: 10/06/2024</p>
+                    <p>Posición: 3er lugar</p>
+                    <p>Formato: Master Duel</p>
+                    <button class="btn btn-outline">Ver detalles</button>
+                </div>
+                <div class="torneo-card card">
+                    <h4>Local Pokemon TCG</h4>
+                    <p>Fecha: 01/06/2024</p>
+                    <p>Posición: Top 8</p>
+                    <p>Formato: Standard</p>
+                    <button class="btn btn-outline">Ver detalles</button>
+                </div>
+                <div class="torneo-card card">
+                    <h4>Torneo Magic Commander</h4>
+                    <p>Fecha: 25/05/2024</p>
+                    <p>Posición: 1er lugar</p>
+                    <p>Formato: Commander</p>
+                    <button class="btn btn-outline">Ver detalles</button>
+                                
+                </div>
+                <button class="btn btn-accent">Ver más torneos</button>
+            </div>
+        </section>
+
+        <section class="preferencias-container">
+            <h3>Mis Preferencias</h3>
+            <button class="btn btn-accent">Editar</button>
+            <div class="preferencias-grid grid">
+                <div class="preferencia-card card">
+                    <h4>Juego Favorito</h4>
+                    <p>Yu-Gi-Oh!</p>
+                </div>
+                <div class="preferencia-card card">
+                    <h4>Formato Preferido</h4>
+                    <p>Master Duel</p>
+                </div>
+                <div class="preferencia-card card">
+                    <h4>Deck Principal</h4>
+                    <p>Sky Striker</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TurnoZero. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:contacto@turnozero.com">contacto@turnozero.com</a></p>
+    </footer>
+</body>
+</html>
